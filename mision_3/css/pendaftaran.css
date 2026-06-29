@@ -28,6 +28,11 @@ span {
   padding: 12px 120;
 }
 
+@media (min-width: 768) {
+  box-shadow: 0 0 1 0 rgba(62, 67, 74, 0.31);
+  box-shadow: 4px 8px 12px 0 rgba(62, 67, 74, 0.15);
+}
+
 .register-header {
   display: flex;
   justify-content: center;
