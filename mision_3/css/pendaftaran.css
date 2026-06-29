@@ -25,12 +25,13 @@ span {
   border-bottom: 1px solid rgba(58, 53, 65, 0.12);
   padding: 12px clamp(24px, 4vw, 30px);
   margin-bottom: clamp(20px, 10vw, 64px);
-  padding: 12px 120;
 }
 
 @media (min-width: 768) {
-  box-shadow: 0 0 1 0 rgba(62, 67, 74, 0.31);
-  box-shadow: 4px 8px 12px 0 rgba(62, 67, 74, 0.15);
+  .navigation {
+    box-shadow: 0 0 1 0 rgba(62, 67, 74, 0.31) 4px 8px 12px 0
+      rgba(62, 67, 74, 0.15);
+  }
 }
 
 .register-header {
