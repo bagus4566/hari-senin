@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pendaftaran Akun</title>
+    <link rel="stylesheet" href="../css/pendaftaran.css" />
+
+    <!------------------google font----------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -16,8 +25,8 @@
 
     <main class="register-page">
       <section class="register-card">
-        <article>
-          <h3 class="register-tittle">Masuk ke akun</h3>
+        <article class="register-header">
+          <h3 class="register-title">Pendaftaran akun</h3>
           <p class="register-subtitle">
             Yuk, lanjutin belajarmu di videobelajar
           </p>
@@ -25,7 +34,9 @@
 
         <form action="#1" method="get" class="register-form">
           <div class="register-name">
-            <label class="label-name" for="nama">Nama Lengkap </label>
+            <label class="label-name" for="nama"
+              >Nama Lengkap<span>*</span>
+            </label>
             <input
               type="text"
               id="nama"
@@ -36,57 +47,50 @@
           </div>
 
           <div class="register-email">
-            <label for="email" class="label-email">E-mail</label>
+            <label for="email" class="label-email">E-mail<span>*</span></label>
             <input
               type="email"
               id="email"
               autocomplete="off"
               autocorrect="off"
+              spellcheck="false"
               required
             />
           </div>
 
           <div class="register-hp">
-            <label for="No.Hp" class="no-hp">No Hp</label>
+            <label for="No.Hp" class="no-hp">No Hp<span>*</span></label>
+            <div class="register-hpnumber">
+              <div class="register-contry">
+                <select name="No-Hp" id="No.Hp">
+                  <option value="+62">🇮🇩 +62</option>
+                  <option value="+60">🇲🇾 +60</option>
+                  <option value="+65">🇸🇬 +65</option>
+                  <option value="+66">🇹🇭 +66</option>
+                </select>
+              </div>
 
-            <div class="register-contry">
-              <select name="No-Hp" id="No.Hp">
-                <option value="+62">
-                  <p>🇮🇩</p>
-                  +62
-                </option>
-                <option value="+60">
-                  <p>🇲🇾</p>
-                  +60
-                </option>
-                <option value="+65">
-                  <p>🇸🇬</p>
-                  +65
-                </option>
-                <option value="+66">
-                  <p>🇹🇭</p>
-                  +66
-                </option>
-              </select>
-            </div>
-
-            <div class="register-nomber">
-              <input
-                type="tel"
-                id="No.Hp"
-                inputmode="numeric"
-                pattern="[0-9]+"
-                autocomplete="off"
-                autocorrect="off"
-                required
-              />
+              <div class="register-number">
+                <input
+                  type="tel"
+                  id="No.Hp"
+                  inputmode="numeric"
+                  pattern="[0-9]+"
+                  autocomplete="off"
+                  autocorrect="off"
+                  required
+                  spellcheck="false"
+                />
+              </div>
             </div>
           </div>
 
           <div class="register-password">
-            <label class="label-password" for="password">Kata Sandi</label>
+            <label class="label-password" for="password"
+              >Kata Sandi<span>*</span></label
+            >
 
-            <div class="register-password">
+            <div class="input-password">
               <input
                 type="password"
                 id="password"
@@ -94,20 +98,21 @@
                 required
                 autocorrect="off"
                 autocomplete="off"
+                spellcheck="false"
               />
-            </div>
 
-            <button type="button" href="#9">
-              <img src="../img/mdi_eye-off.png" alt="" />
-            </button>
+              <button type="button" href="#9">
+                <img src="../img/mdi_eye-off.png" alt="" />
+              </button>
+            </div>
           </div>
 
           <div class="register-kopassword">
             <label class="label-kopassword" for="password"
-              >Konfirmasi Kata Sandi</label
+              >Konfirmasi Kata Sandi<span>*</span></label
             >
 
-            <div class="register-kopassword">
+            <div class="input-kopassword">
               <input
                 type="password"
                 id="password"
@@ -115,20 +120,21 @@
                 required
                 autocorrect="off"
                 autocomplete="off"
+                spellcheck="false"
               />
-            </div>
 
-            <button type="button" href="#9">
-              <img src="../img/mdi_eye-off.png" alt="" />
-            </button>
+              <button type="button" href="#9">
+                <img src="../img/mdi_eye-off.png" alt="" />
+              </button>
+            </div>
           </div>
 
           <div class="form-lupa">
             <a class="lupa" href="#1">Lupa Pasword?</a>
           </div>
           <div class="form-button">
-            <button class="masuk" type="submit">Masuk</button>
-            <a class="daftar" href="../html/Pendaftaran-akun.html">Daftar</a>
+            <button class="Daftar" type="submit">Daftar</button>
+            <a class="Masuk" href="../html/login.htm">Masuk</a>
             <p class="atau">atau</p>
             <button class="google" type="button" href="#5">
               <img src="../img/logos_google-icon.png" alt="logo_google" />

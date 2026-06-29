@@ -25,9 +25,10 @@ span {
   border-bottom: 1px solid rgba(58, 53, 65, 0.12);
   padding: 12px clamp(24px, 4vw, 30px);
   margin-bottom: clamp(20px, 10vw, 64px);
+  padding: 12px 120;
 }
 
-.login-header {
+.register-header {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -37,14 +38,12 @@ span {
 .logo img {
   width: clamp(145px, 12vw, 193px);
 }
-
-.login-page {
+.register-page {
   display: flex;
   justify-content: center;
   padding: 12px 120px 12px 120px;
 }
-
-.login-card {
+.register-card {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -57,7 +56,7 @@ span {
   gap: 16px;
 }
 
-.login-tittle {
+.register-title {
   font-family: "poppins", sans-serif;
   font-weight: 600;
   font-size: clamp(24px, 4vw, 32px);
@@ -67,7 +66,7 @@ span {
   color: rgba(34, 35, 37, 1);
 }
 
-.login-subtitle {
+.register-subtitle {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: clamp(14px, 3vw, 16px);
@@ -77,11 +76,36 @@ span {
   color: rgba(51, 51, 51, 0.68);
 }
 
-.login-form {
+.register-form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+}
+
+.register-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-name {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: rgba(51, 51, 51, 0.68);
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+.register-name input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: clamp(280px, 40vw, 460px);
+  height: 43px;
+  border: 1px solid rgba(58, 53, 65, 0.12);
+  padding: 4px 10px;
+  border-radius: 6px;
 }
 
 .label-email {
@@ -93,11 +117,50 @@ span {
   font-size: clamp(14px, 2vw, 16px);
 }
 
-.login-email input {
-  bbackground-color: transparent;
+.register-email input {
+  background-color: transparent;
   border: transparent;
   outline: transparent;
   width: clamp(280px, 40vw, 460px);
+  height: 43px;
+  border: 1px solid rgba(58, 53, 65, 0.12);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.register-hp {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: rgba(51, 51, 51, 0.68);
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+.register-hpnumber {
+  display: flex;
+  flex-direction: row;
+}
+
+.register-contry select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: clamp(75px, 20vw, 100px);
+  height: 43px;
+  border: 1px solid rgba(58, 53, 65, 0.12);
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-right: clamp(15px, 3vw, 22px);
+  font-size: clamp(12px, 2vw, 18px);
+  letter-spacing: 1px;
+}
+
+.register-number input {
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+  width: clamp(190px, 40vw, 340px);
   height: 43px;
   border: 1px solid rgba(58, 53, 65, 0.12);
   padding: 4px 10px;
@@ -137,6 +200,40 @@ span {
   background-color: transparent;
   border: 1px transparent;
 }
+
+.label-kopassword {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: rgba(51, 51, 51, 0.68);
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+.input-kopassword {
+  display: flex;
+  flex-direction: row;
+  width: clamp(280px, 40vw, 460px);
+  height: 43px;
+  border: 1px solid rgba(58, 53, 65, 0.12);
+  border-radius: 6px;
+}
+
+.register-kopassword input {
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+  width: clamp(280px, 40vw, 460px);
+  height: 43px;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.input-kopassword button {
+  background-color: transparent;
+  border: 1px transparent;
+}
+
 .form-lupa {
   display: flex;
   flex-direction: row-reverse;
@@ -144,17 +241,18 @@ span {
 
 .lupa {
   text-decoration: none;
-  color: rgba(51, 51, 51, 0.6);
+  color: rgba(51, 51, 51, 0.68);
 }
 
 /* ==========button======= */
+
 .form-button {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.form-button .masuk {
+.form-button .Daftar {
   background-color: rgba(62, 207, 76, 1);
   border: none;
   outline: none;
@@ -200,7 +298,6 @@ button:active {
   letter-spacing: 0.2px;
   font-size: clamp(14px, 2vw, 16px);
   color: rgba(74, 80, 92, 1);
-  margin-top: 0;
 }
 
 .atau::before,
